@@ -4,7 +4,7 @@ from django.db import models
 class SchoolModel (models.Model):
     stu_name= models.CharField(max_length=50)
     stu_email= models.EmailField()
-    stu_roll = models.BigIntegerField()
+    stu_roll = models.IntegerField()
     def __str__(self):
         return self.stu_name
     
@@ -12,4 +12,4 @@ class SchoolModel (models.Model):
 class StudentModel(models.Model):
     stu_name= models.CharField(max_length=50)
     stu_email= models.EmailField()
-    stu_roll = models.BigIntegerField()
+    stu_roll = models.IntegerField()

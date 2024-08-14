@@ -12,7 +12,7 @@ router.register(r'school',SchoolViewSet, basename='school')
 router.register(r'Student',StudentViewSet,basename='Student')
 
 urlpatterns = [
-    path('api/',include(router.urls)),
+    path('',include(router.urls)),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
